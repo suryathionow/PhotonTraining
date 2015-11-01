@@ -7,7 +7,7 @@ public class MainWartegSystem {
 
     public static void main(String[] args){
         Warteg photonTraining = new Warteg("Photon");
-        photonTraining.wartegOpen();
+        photonTraining.wartegClose();
     }
 
 }
