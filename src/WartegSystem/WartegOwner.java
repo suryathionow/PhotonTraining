@@ -11,12 +11,12 @@ public class WartegOwner {
     public WartegOwner(int costumerMoney, int totalCostumerPrice) {
         if(costumerMoney > totalCostumerPrice){
             this.changeMoney = costumerMoney - totalCostumerPrice;
-            System.out.println("Your change is Rp. "+ changeMoney +". Thank you!");
+            System.out.println("Owner: Total price is "+ totalCostumerPrice +". Your change is Rp. "+ changeMoney +". Thank you!");
         }else if(costumerMoney < totalCostumerPrice){
             this.amountDue = costumerMoney - totalCostumerPrice;
-            System.out.println("You still have amount due Rp. " + Math.abs(amountDue) +".");
+            System.out.println("Owner: Total price is "+ totalCostumerPrice +". You still have amount due Rp. " + Math.abs(amountDue) +".");
         }else{
-            System.out.println("Thank you!");
+            System.out.println("Owner: Total price is "+ totalCostumerPrice +". Thank you!");
         }
 
     }
